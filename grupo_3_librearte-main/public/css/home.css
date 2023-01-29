@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+.homeNav {
+    background-color: #F3AE4B;
+    font-weight: 900;
+    height: 100px;
+}
+
+.homeNav a{
+    color: black;
+    font-size: 20px;
+}
+
+.homeNav li {
+    display: none;
+}
+
+ul li:hover {
+    text-decoration: underline;
+}
+
+.homeNav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 22px;
+}
+
+.homeNav img {
+    height: 100px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border-bottom: ridge;
+    box-shadow: grey 0.5px 2px 10px;
+}
+
+.burgerMenu {
+    font-size: 35px;
+}
+
+/*BODY*/
+
+.landing img {
+    width: 100%;
+}
+
+.landing .landing2{
+    display: none;
+}
+
+.landing div {
+    height: 120px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: orange;
+    border: 10px solid darkgreen;
+    /* background-color: #a3c4f3;
+    border: 10px solid #cdb4db; */
+    margin: 7px;
+    border-style: double;
+    /* border-style: inset; */
+    font-size: 18px;
+}
+
+.landing h2 {
+    width: 100%;
+    font-family: cursive;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.textOfertas {
+        color: darkgreen;
+}
+
+.categories article{
+    text-align: center;
+    background-color: seagreen;
+    border: 6px solid orange;
+    padding: 35px;
+    text-transform: uppercase;
+    margin: 7px;
+
+}
+
+.categories article:hover .textCat {
+    font-size: 23px;
+    transition: all 400ms; 
+}
+
+.categories article a{
+    padding: 28px;
+}
+
+.textCat{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 5px black
+}
+
+main article .books {
+    background-image: url(/images/boton-libros.png);
+}
+
+/*FOOTER*/
+footer {
+    background-color: #F3AE4B;
+    border-top: solid;
+}
+
+.logo-footer {
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    height: 120px;
+    border-bottom: ridge;
+    margin-top: 10px;
+    display: block;
+    margin-inline: auto;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.iconos {
+    color: #ebebeb;
+    margin: 5px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*MEDIA*/
+
+@media (min-width:768px){
+
+    .homeNav li {
+        display: block;
+    }
+
+    .homeNav a {
+        font-size: 15px;
+    }
+
+    .homeNav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        list-style-type: none;
+        height: 100px;
+        position: relative;
+    }
+    
+    .homeNav img {
+        height: 130px;
+        position: absolute;
+        left: 50%;
+        margin-left: -55px;
+        bottom: -45px;
+    }
+
+    .burgerMenu {
+        display: none;
+    }   
+}
+
+@media (min-width:1024px){
+
+    .landing {
+        height: 100vh;
+    }
+
+    .landing div {
+    position: absolute;
+    right: 40px;
+    height: 16%;
+    width: 35%;
+    margin-top: -12%;
+    background-color: whitesmoke;
+    border: 10px solid hotpink;
+    border-style: double;
+    border-radius: 10%;
+    }
+
+    .textOfertas{
+            color: royalblue;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .categories article {
+        padding: 30px;
+        width: 40%;
+        border-radius: 10%;
+        background-color: yellowgreen;
+        border: 6px solid orange;
+
+    }
+
+    .landing .landing2{
+        display: block;
+        height: 100%;
+    }
+
+    .landing img {
+        display: none;
+    }
+    
+}
+
+@media (min-width:1440px){
+    
+    .landing div {
+        margin-top: -12%;
+    }
+    
+}

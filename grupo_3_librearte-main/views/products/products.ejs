@@ -1,0 +1,35 @@
+
+        <!-- Head -->
+        <%- include('../partials/head') %> 
+    
+    <link rel="stylesheet" href="/css/productDetail.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <title>Lista de productos</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <%- include('../partials/header') %> 
+
+    <main>
+        <div class="agregar"><a href="/products/create">Agregar producto</a></div>
+        
+        <h2>Productos escolares</h2>
+        <section id="schoolSupplies">
+            
+            <% for(let i = 0; i < productsList.length; i++) {%>
+                
+            <article>
+                <h4><%= productsList[i].producto %></h4>
+                <a href="/products/<%= productsList[i].id %> "><img src="./images/products/<%= productsList[i].img1 %>"></a>
+                
+            </article>
+
+            <% } %> 
+        </section>
+
+        </main>
+
+    <!-- Footer -->
+    <%- include('../partials/footer') %> 
